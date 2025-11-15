@@ -131,7 +131,7 @@ def initialize_components(selected_model):
     return rag_chain
 
 # Streamlit UI
-st.header("해양 플라스틱의 위험성")
+st.header("인천의 해양오염")
 
 # 첫 실행 안내 메시지
 if not os.path.exists("./chroma_db"):
