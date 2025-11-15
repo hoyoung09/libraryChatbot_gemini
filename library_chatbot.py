@@ -83,6 +83,7 @@ def get_vectorstore(_docs):
 def initialize_components(selected_model):
     file_path = r"/mount/src/librarychatbot_gemini/★ 해양 플라스틱 저감 종합대책(배포용).pdf"
     file_path = r"/mount/src/librarychatbot_gemini/연구과제_조강희서해+5도+해양폐기물+현황조사+및+주민참여+자원순환+처리방안+연구.pdf"
+    file_path = r"/mount/src/librarychatbot_gemini/(1)1 인천시 해양쓰레기 줄여 환경특별시 바다 만든다.pdf
     pages = load_and_split_pdf(file_path)
     vectorstore = get_vectorstore(pages)
     retriever = vectorstore.as_retriever()
